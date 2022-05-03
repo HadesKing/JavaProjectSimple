@@ -1,0 +1,18 @@
+
+CREATE DATABASE `test_java` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE test_java.user_info (
+	id BIGINT UNSIGNED auto_increment NOT NULL,
+	user_name varchar(100) NOT NULL,
+	password varchar(100) NOT NULL,
+	status TINYINT UNSIGNED NULL,
+	create_time DATETIME NULL,
+	last_update_time DATETIME NULL,
+	CONSTRAINT user_info_PK PRIMARY KEY (id),
+	CONSTRAINT user_info_UN UNIQUE KEY (user_name)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
+
+
