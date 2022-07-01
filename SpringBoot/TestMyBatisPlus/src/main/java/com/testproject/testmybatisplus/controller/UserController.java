@@ -31,6 +31,7 @@ public class UserController {
 
         List<UserPO> list = new LinkedList<>();
         list = userRepository.selectAll();
+
         return list;
     }
 
